@@ -1,5 +1,7 @@
 
 :root{
+--gradiente: linear-gradient(#FFBF00, #F2A50C);
+--gradiente-destaque: linear-gradient(#FFB60d, #e59317);
 --p1: #ffbb00;
 --p2: #e4a30b;
 --p3: #a66f00;
@@ -12,7 +14,7 @@
   /* --c2: #ededed; */
   /* --c3: #dedede; */
   /* --c4: #ccc; */
-  /* --c5: #b2b2b2; */
+  --c5: #b2b2b2;
   /* --c6: #9c9c9c; */
   /* --c7: #717171; */
   /* --c8: #595959; */
