@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: initial;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
