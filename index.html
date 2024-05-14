@@ -13,11 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/resete.css">
-  <link rel="stylesheet" href="./css/variaveis.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/global.css">
-  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/variaveis.css">
 </head>
 
 <body>
@@ -28,7 +25,7 @@
       </a>
 
       <nav aria-label="primária">
-        <ul class="header-menu">
+        <ul class="header-menu poppins-m">
           <li>
             <a href="#">Bicicletas</a>
           </li>
@@ -46,11 +43,11 @@
   <main class="introducao-bg">
     <div class="introducao">
       <div class="introducao-informacao">
-        <h1>Bicicletas feitas sob medida<span class="ponto">.</span></h1>
+        <h1 class="titulo">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
 
-        <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <p class="roboto-l">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
 
-        <a href="./bicicletas.html">Selecione a sua</a>
+        <a class="btn" href="./bicicletas.html">Selecione a sua</a>
       </div>
 
       <div class="introducao-imagem">
@@ -61,36 +58,44 @@
     </div>
   </main>
 
-  <!-- <section class="sessao-bicicleta">
-    <h1>escolha a sua <span class="ponto">.</span></h1>
+  <section class="bicicletas">
+    <h1 class="titulo">escolha a sua<span class="cor-p1">.</span></h1>
 
-    <ul class="bicicletas">
+    <ul class="bicicletas-informacoes">
       <li>
-        <img src="#" alt="magic might">
+        <a href="./bicicleta-interna.html">
+          <img src="./img/bicicletas/magic-home.jpg" alt="bicicleta magic might">
 
-        <div class="informacoes-bicicleta">
-          <p class="nome-bicicleta">Magic might</p>
-          <p class="preco">R$ 2499</p>
-        </div>
+          <div class="descricoes">
+            <h2>Magic might</h2>
+            <p>R$ 2499</p>
+          </div>
+        </a>
       </li>
-      <li>
-        <img src="#" alt="nimbus stark">
 
-        <div class="informacoes-bicicleta">
-          <p class="nome-bicicleta">Magic might</p>
-          <p class="preco">R$ 2499</p>
-        </div>
+      <li>
+        <a href="./bicicleta-interna.html">
+          <img src="./img/bicicletas/nimbus-home.jpg" alt="bicicleta nimbus stark">
+
+          <div class="descricoes">
+            <h2>Nimbus Stark</h2>
+            <p>R$ 4999</p>
+          </div>
+        </a>
       </li>
-      <li>
-        <img src="#" alt="nebula cosmic">
 
-        <div class="informacoes-bicicleta">
-          <p class="nome-bicicleta">Magic might</p>
-          <p class="preco">R$ 2499</p>
-        </div>
+      <li>
+        <a href="./bicicletas.html">
+          <img src="./img/bicicletas/nebula-home.jpg" alt="nebula cosmic">
+
+          <div class="descricoes">
+            <h2>Nebula Cosmic</h2>
+            <p>R$ 3999</p>
+          </div>
+        </a>
       </li>
     </ul>
-  </section> -->
+  </section>
 
   <!-- <section class="sessao-tecnologias">
     <div class="informacoes-tecnologias">

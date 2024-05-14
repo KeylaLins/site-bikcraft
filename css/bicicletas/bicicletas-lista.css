@@ -1,0 +1,45 @@
+.bicicletas {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 120px 20px;
+  margin-bottom: 80px;
+}
+.bicicletas h1 {
+  padding: 52px;
+}
+
+.bicicletas-informacoes {
+  display: flex;
+  gap: 40px;
+}
+
+.bicicletas-informacoes img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.bicicletas-informacoes .descricoes {
+  padding: 20px;
+}
+
+.bicicletas-informacoes .descricoes h2 {
+  color: var(--c11);
+  font-size: 3.2rem;
+  position: relative;
+}
+.bicicletas-informacoes .descricoes h2::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--p1);
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  top: 14px;
+  left: -20px;
+}
+
+.bicicletas-informacoes .descricoes p{
+  color: var(--c8);
+  font-size: 1.8rem;
+  line-height: 1.9;
+}
