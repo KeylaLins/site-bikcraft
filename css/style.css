@@ -11,6 +11,7 @@
 /*Bicicletas*/
 @import url("./bicicletas/bicicletas-lista.css");
 
+@import url("./home/tecnologias.css");
 
 
 
@@ -24,4 +25,3 @@
   bottom: 16px;
   left: 16px;
 } */
-
