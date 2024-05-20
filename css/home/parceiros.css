@@ -1,0 +1,22 @@
+.parceiros{
+  padding: 120px 0;
+}
+
+.parceiros .titulo{
+  padding-bottom: 60px;
+  padding-left: 120px;
+  text-transform: lowercase;
+}
+
+.parceiros-marcas td{
+  border: 1px solid var(--cor-2);
+  padding: 40px;
+}
+
+.parceiros-marcas{
+  background-color: blac;
+  width: 100%;
+  text-align: center; 
+  border-collapse: collapse;
+  border: 2px solid transparent;
+}

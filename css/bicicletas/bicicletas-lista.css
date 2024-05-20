@@ -1,8 +1,5 @@
 .bicicletas {
   background-color: var(--cor-0);
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
   padding-bottom: 120px;
 }
 .bicicletas h2 {
