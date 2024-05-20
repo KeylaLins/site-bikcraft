@@ -26,3 +26,13 @@
   background: var(--gradiente-destaque);
 }
 
+.btn-prata{
+  background-color: var(--cor-10);
+  color: var(--cor-4);
+  font: var(--poppins-mb);
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 4px;
+  display: inline-block;
+}
+

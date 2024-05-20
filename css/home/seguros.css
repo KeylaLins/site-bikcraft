@@ -1,0 +1,62 @@
+.seguros-bg{
+  background-color: var(--cor-11);
+}
+
+.seguros h1{
+  color: var(--cor-0);
+  padding: 60px;
+}
+
+.planos{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.seguro-cartao{
+  background-color: var(--cor-12);
+  padding: 32px;
+  padding-left: 64px;
+  border-radius: 4px;
+  color: aliceblue;
+  width: 560px;
+}
+.seguro-cartao ul{
+  padding: 32px 0;
+  grid-column: 1 / -1;
+}
+.seguro-cartao ul li{
+  color: var(--cor-0);
+  font: var(--roboto-m);
+  line-height: 2;
+  position: relative;
+}
+.seguro-cartao ul li::before{
+  content: url("../../img/icones/lista.svg");
+  position: absolute;
+  left: -24px;
+}
+.seguros-preco{
+  color: var(--cor-0);
+  font: var(--poppins-xl);
+  display: block;
+}
+.seguros-preco::after{
+  content: "mensal";
+  font: var(--poppins-xs);
+  display: inline;
+  right: 0px;
+}
+
+.prata h2, .ouro h2{
+  font: var(--poppins-xl);
+  text-transform: uppercase;
+  display: inline;
+  position: relative;
+}
+.prata h2{
+  color: var(--cor-6);
+}
+.ouro h2{
+  color: var(--cor-p1);
+}
