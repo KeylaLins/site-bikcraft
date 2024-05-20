@@ -50,6 +50,10 @@
   position: absolute;
 }
 
+.btn-escolha-modelo:hover{
+  color: var(--cor-p2);
+}
+
 .tecnologias-vantagens{
   font: var(----poppins-l);
   display: flex;

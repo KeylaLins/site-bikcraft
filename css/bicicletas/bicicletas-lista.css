@@ -1,11 +1,12 @@
 .bicicletas {
+  background-color: var(--cor-0);
   max-width: 1400px;
   margin: 0 auto;
-  padding: 120px 20px;
+  padding: 0 20px;
+  padding-bottom: 120px;
 }
 .bicicletas h2 {
   padding: 52px;
-  max-width: 1200px;
 }
 
 .bicicletas-lista {
