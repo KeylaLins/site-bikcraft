@@ -1,26 +1,43 @@
-.depoimento{
+.depoimento {
   background-color: var(--cor-p1);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.depoimento img{
+.depoimento img {
   border-radius: 0px;
   height: 100%;
   object-fit: cover;
 }
 
-.depoimento-texto{
-  padding: 80px;
-  max-width: 550px;
+.depoimento-conteudo {
+  padding: 40px 40px 80px 80px;
   align-self: end;
 }
-.depoimento-texto :first-child{
-  font-size: 3.6rem;
+
+.depoimento-conteudo p {
   color: var(--cor-p5);
+  font: var(--poppins-xl);
   padding-bottom: 32px;
+  font-family: "Merriweather", sans-serif;
+  max-width: 32ch;
+  position: relative;
 }
-.depoimento-texto :last-child{
-  font: var(--poppins-l);
+.depoimento-conteudo p::before {
+  content: "“";
+  left: -52px;
+  top: -20px;
+}
+.depoimento-conteudo p::after {
+  content: "”";
+}
+.depoimento-conteudo p::before, .depoimento-conteudo p::after{
+  font-size: 8rem;
+  color: var(--cor-p2);
+  position: absolute;
+}
+
+.depoimento-conteudo .depoimento-nome {
+  font: var(--poppins-mb);
   color: var(--cor-p4);
 }

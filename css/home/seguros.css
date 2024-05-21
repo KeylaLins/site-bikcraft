@@ -1,62 +1,94 @@
-.seguros-bg{
+.seguros-bg {
   background-color: var(--cor-11);
 }
 
-.seguros h1{
-  color: var(--cor-0);
-  padding: 60px;
+.seguros {
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.planos{
+.seguros h2 {
+  color: var(--cor-0);
+  padding: 60px 0;
+}
+
+.planos {
   display: flex;
   gap: 40px;
-  justify-content: center;
+  align-items: center;
 }
 
-.seguro-cartao{
+.seguros-item {
   background-color: var(--cor-12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 32px;
   padding-left: 64px;
-  border-radius: 4px;
-  color: aliceblue;
-  width: 560px;
-}
-.seguro-cartao ul{
-  padding: 32px 0;
-  grid-column: 1 / -1;
-}
-.seguro-cartao ul li{
-  color: var(--cor-0);
-  font: var(--roboto-m);
-  line-height: 2;
-  position: relative;
-}
-.seguro-cartao ul li::before{
-  content: url("../../img/icones/lista.svg");
-  position: absolute;
-  left: -24px;
-}
-.seguros-preco{
-  color: var(--cor-0);
-  font: var(--poppins-xl);
-  display: block;
-}
-.seguros-preco::after{
-  content: "mensal";
-  font: var(--poppins-xs);
-  display: inline;
-  right: 0px;
+  width: 100%;
 }
 
-.prata h2, .ouro h2{
+.prata h3,
+.ouro h3 {
+  font: var(--poppins-xl);
+  text-transform: uppercase;
+}
+.prata h3 {
+  color: var(--cor-6);
+}
+.ouro h3 {
+  color: var(--cor-p1);
+}
+
+.prata h2,
+.ouro h2 {
   font: var(--poppins-xl);
   text-transform: uppercase;
   display: inline;
   position: relative;
 }
-.prata h2{
+.prata h2 {
   color: var(--cor-6);
 }
-.ouro h2{
+.ouro h2 {
   color: var(--cor-p1);
+}
+
+.seguros-preco {
+  color: var(--cor-0);
+  font: var(--poppins-xl);
+  text-align: right;
+  position: relative;
+}
+.seguros-preco span {
+  font: var(--poppins-xs);
+  color: var(--cor-6);
+  text-align: end;
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
+
+.seguros-item ul {
+  color: var(--cor-0);
+  font: var(--roboto-m);
+  line-height: 2;
+  position: relative;
+  padding: 40px 0 32px 0;
+}
+.seguros-item ul li::before {
+  content: url("../../img/icones/lista.svg");
+  position: absolute;
+  left: -24px;
+}
+
+.seguros-item .btn,
+.seguros-item .btn-secundario {
+  grid-column: 1;
+  justify-self: start;
+}
+.seguros-item .btn-secundario {
+  background-color: var(--cor-10);
+  color: var(--cor-4);
 }

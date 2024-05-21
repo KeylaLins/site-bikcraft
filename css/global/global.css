@@ -5,7 +5,7 @@ body {
 *{
   margin: 0;
   padding: 0;
-  color: initial;
+  color: inherit;
   box-sizing: border-box;
 }
 

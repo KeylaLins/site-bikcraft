@@ -26,7 +26,7 @@
   background: var(--gradiente-destaque);
 }
 
-.btn-prata{
+.btn-secundario{
   background-color: var(--cor-10);
   color: var(--cor-4);
   font: var(--poppins-mb);
