@@ -1,0 +1,9 @@
+.contato-bg{
+  background-color: var(--cor-12);
+}
+
+.contato{
+  display: flex;
+  color: var(--cor-0);
+  padding: 60px 0 32px 0;
+}
