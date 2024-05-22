@@ -1,9 +1,32 @@
-.contato-bg{
+.rodape-bg {
   background-color: var(--cor-12);
 }
 
-.contato{
-  display: flex;
+.rodape {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   color: var(--cor-0);
   padding: 60px 0 32px 0;
+  justify-content: space-around;
+}
+
+.contato {
+}
+.contato h3,
+.informacoes h3 {
+  color: var(--cor-0);
+  font: var(--roboto-l);
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+
+.contato p {
+  /* padding: 16px 0; */
+  font: var(--roboto-s);
+  color: var(--cor-5);
+}
+
+.informacoes ul{
+  font: var(--poppins-m);
+  color: var(--cor-5);
 }
