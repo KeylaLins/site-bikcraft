@@ -1,20 +1,17 @@
 .introducao-bg {
   background-color: var(--cor-12);
   position: relative;
-  box-shadow: inset 0 -120px 0 var(--cor-0);
+  box-shadow: inset 0 -60px 0 var(--cor-0);
 }
 
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding-bottom: 120px;
+  gap: 40px;
 }
 
 .introducao-informacao {
-  align-self: flex-end;
-  display: block;
-  padding-bottom: 120px;
+  padding: 140px 0;
 }
 
 .introducao-informacao h1 {
@@ -25,12 +22,9 @@
 .introducao-informacao p {
   color: var(--cor-5);
   font: var(--roboto-l);
-  padding-bottom: 24px;
+  padding-bottom: 20px;
 }
 
-.introducao .introducao-imagem {
-  margin-bottom: -120px;
-}
 .introducao img {
   height: 100%;
   width: 100%;
