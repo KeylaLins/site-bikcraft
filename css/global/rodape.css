@@ -42,10 +42,20 @@
   color: var(--cor-0);
 }
 
+.redes li{
+  transition: ease-in-out 0.2s;
+}
+.redes li:hover{
+  transform: scale(1.2,1.2);
+}
+
 .informacoes ul li {
   font: var(--poppins-m);
   color: var(--cor-5);
   padding: 10px 0;
+}
+.informacoes ul a:hover {
+  color: var(--cor-0);
 }
 
 .direitos {

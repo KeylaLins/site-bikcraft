@@ -37,4 +37,7 @@
   border-radius: 4px;
   display: inline-block;
 }
+.btn-secundario:hover{
+  background-color: var(--cor-9);
+}
 
