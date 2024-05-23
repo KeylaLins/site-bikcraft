@@ -10,8 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/variaveis.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -37,7 +39,7 @@
     </div>
   </header>
 
-  <main class="introducao-bg">
+  <main class="introducao-bg" id="home">
     <div class="introducao container1">
       <div class="introducao-informacao">
         <h1 class="titulo">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
@@ -214,22 +216,25 @@
 
   <footer class="rodape-bg">
     <div class="rodape container1">
-      <a href="#">
-        <img src="./img/bikcraft.svg" alt="logo" class="logo">
+      <a class="logo" href="#home">
+        <img src="./img/bikcraft.svg" alt="logo">
       </a>
+
 
       <div class="contato">
         <h3>Contato</h3>
-        <p>+55 21 9999-9999</p>
-        <p>contato@bikcraft.com</p>
-        <p>Rua Ali Perto, 42 - Botafogo</p>
-        <p>Rio de Janeiro - RJ</p>
+        <div class="contato-dados">
+          <p>+55 21 9999-9999</p>
+          <p>contato@bikcraft.com</p>
+          <p>Rua Ali Perto, 42 - Botafogo</p>
+          <p>Rio de Janeiro - RJ</p>
+        </div>
 
         <nav>
           <ul class="redes">
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
           </ul>
         </nav>
       </div>
@@ -256,8 +261,10 @@
       </div>
 
     </div>
-    <!-- <p>Bikcraft © Alguns direitos reservados.</p> -->
+    <p class="direitos container1">Bikcraft © Alguns direitos reservados.</p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
