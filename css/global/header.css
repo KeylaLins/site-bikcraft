@@ -32,8 +32,8 @@
 
 .header .menu {
   display: none;
-  height: 60px;
-  width: 60px;
+  height: 52px;
+  width: 56px;
   align-self: flex-end;
 }
 .header .hamburger {
@@ -115,10 +115,10 @@
   .header-menu {
     display: none;
   }
-
+  
   .header input:checked ~ .header-menu {
     display: block;
-    background-color: var(--cor-11);
+    background-color: var(--cor-10);
   }
   .header nav{
     position: absolute;
@@ -132,7 +132,7 @@
     text-align: center;
   }
   .header-menu :hover {
-    background-color: var(--cor-10);
+    background-color: var(--cor-9);
     border-radius: 4px;
   }
 }
