@@ -3,14 +3,11 @@
 }
 
 .seguros {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  padding-top: 60px;
 }
 
 .seguros h2 {
   color: var(--cor-0);
-  padding-top: 60px;
   text-transform: lowercase;
 }
 
@@ -19,40 +16,29 @@
   gap: 40px;
   align-items: center;
   padding: 60px 0;
+  justify-content: center;
 }
 
-.seguros-item {
+.seguro-plano {
   background-color: var(--cor-12);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   padding: 32px;
   padding-left: 64px;
   width: 100%;
 }
 
-.prata h3,
-.ouro h3 {
-  font: var(--poppins-xl);
-  text-transform: uppercase;
-}
-.prata h3 {
-  color: var(--cor-6);
-}
-.ouro h3 {
-  color: var(--cor-p1);
+.plano-item {
+  display: flex;
+  justify-content: space-between;
 }
 
-.prata h2,
-.ouro h2 {
+.seguro-plano h3 {
   font: var(--poppins-xl);
   text-transform: uppercase;
-  display: inline;
-  position: relative;
 }
-.prata h2 {
+.seguro-plano:first-child h3 {
   color: var(--cor-6);
 }
-.ouro h2 {
+.seguro-plano:last-child h3 {
   color: var(--cor-p1);
 }
 
@@ -71,22 +57,31 @@
   bottom: -10px;
 }
 
-.seguros-item ul {
+.seguro-plano ul {
   color: var(--cor-0);
   font: var(--roboto-m);
   line-height: 2;
   position: relative;
   padding: 40px 0 32px 0;
 }
-.seguros-item ul li::before {
+.seguro-plano ul li::before {
   content: url("../../img/icones/lista.svg");
   position: absolute;
   left: -24px;
 }
 
-.seguros-item .btn,
-.seguros-item .btn-secundario {
+.seguro-plano .btn,
+.seguro-plano .btn-secundario {
   grid-column: 1;
   justify-self: start;
 }
 
+@media (max-width: 800px) {
+  .seguros .titulo {
+    font-size: 4rem;
+  }
+  .planos {
+    flex-direction: column;
+    padding-top: 32px;
+  }
+}
