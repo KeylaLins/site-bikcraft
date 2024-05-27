@@ -41,3 +41,46 @@
   font: var(--poppins-mb);
   color: var(--cor-p4);
 }
+
+@media(max-width:900px){
+  .depoimento{
+    grid-template-columns: 1fr;
+  }
+  
+  .depoimento img {
+    max-height: 280px;
+    width: 100%;
+  }
+
+  .depoimento-conteudo {
+    padding: 80px;
+    text-align: center;
+  }
+  .depoimento-conteudo p::before{
+    left: -20px;
+  top: 0px;
+  }
+  .depoimento-conteudo p::before, .depoimento-conteudo p::after{
+    font-size: 4rem;
+  }
+
+  .depoimento-conteudo p{
+    font-size: 2.4rem;
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 750px){
+  .depoimento-conteudo {
+    padding: 32px;
+    text-align: center;
+  }
+  .depoimento-conteudo p{
+    font-size: 2rem;
+    max-width: 100%;
+    padding-bottom: 16px;
+  }
+  .depoimento-conteudo .depoimento-nome{
+    font-size: 1.6rem;
+  }
+}
