@@ -58,6 +58,9 @@ display: block;
 }
 
 @media (max-width: 1200px){
+  .bicicletas{
+    padding-bottom: 60px;
+  }
   .bicicletas h2{
     font-size: 4.8rem;
     padding-bottom: 20px;
