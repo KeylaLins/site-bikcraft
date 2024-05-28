@@ -33,20 +33,6 @@
   padding: 20px 0;
 }
 
-.btn-escolha-modelo{
-  font: var(--poppins-l);
-  text-transform: uppercase;
-  color: var(--cor-p1);
-  position: relative;
-  display: inline-block;
-  border-bottom: 4px solid var(--cor-p1);
-}
-
-.btn-escolha-modelo:hover{
-  color: var(--cor-1);
-  border-bottom: 4px solid var(--cor-1);
-}
-
 .tecnologias-vantagens{
   font: var(----poppins-l);
   display: flex;
@@ -108,7 +94,7 @@
     padding: 0;
   }
 
-  .btn-escolha-modelo{
+  .link{
     font-size: 2rem;
     padding-top: 12px;
   }

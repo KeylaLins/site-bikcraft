@@ -3,20 +3,17 @@
 }
 
 .seguros {
-  padding-top: 60px;
-}
-
-.seguros h2 {
-  color: var(--cor-0);
-  text-transform: lowercase;
-}
-
-.planos {
-  display: flex;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
-  padding: 60px 0;
-  justify-content: center;
+}
+
+.seguros .titulo {
+  color: var(--cor-0);
+  text-transform: lowercase;
+  grid-column: 1 / -1;
 }
 
 .seguro-plano {
@@ -24,18 +21,14 @@
   padding: 32px;
   padding-left: 64px;
   width: 100%;
-}
-
-.plano-item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
 }
 
 .seguro-plano h3 {
   font: var(--poppins-xl);
   text-transform: uppercase;
-}
-.seguro-plano:first-child h3 {
   color: var(--cor-6);
 }
 .seguro-plano:last-child h3 {
@@ -46,45 +39,65 @@
   color: var(--cor-0);
   font: var(--poppins-xl);
   text-align: right;
-  position: relative;
 }
 .seguros-preco span {
+  grid-column: 2;
+  display: block;
   font: var(--poppins-xs);
   color: var(--cor-6);
-  text-align: end;
-  position: absolute;
-  right: 0;
-  bottom: -16px;
 }
 
 .seguro-plano ul {
+  grid-column: 1 / -1;
   color: var(--cor-0);
   font: var(--roboto-m);
   line-height: 2;
   position: relative;
-  padding: 40px 0 32px 0;
+}
+
+.seguro-plano ul li {
+  display: flex;
+  align-items: center;
 }
 .seguro-plano ul li::before {
-  content: url("../../img/icones/lista.svg");
+  content: "";
+  background-image: url("../../img/icones/lista.svg");
+  width: 12px;
+  height: 8px;
   position: absolute;
   left: -24px;
 }
 
 .seguro-plano .btn,
-.seguro-plano .btn-secundario {
-  grid-column: 1;
+.seguro-plano .btn.secundario {
+  grid-column: 1/-1;
   justify-self: start;
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 850px) {
   .seguros .titulo {
     font-size: 4rem;
   }
-  .planos {
-    flex-direction: column;
+  .seguros {
+    grid-template-columns: 1fr;
     padding-top: 32px;
   }
-  .seguro-plano h3, .seguro-plano .seguros-preco{
-    font-size: 2.4rem;
+  .seguro-plano h3,
+  .seguro-plano .seguros-preco {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .seguro-plano h3,
+  .seguro-plano .seguros-preco {
+    font-size: 2rem;
+  }
+  .seguro-plano ul{
+    font-size: 1.4rem;
+  }
+  .seguro-plano .btn{
+    font-size: 1.4rem;
   }
 }

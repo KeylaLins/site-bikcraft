@@ -16,27 +16,35 @@
   display: inline-block;
   color: var(--cor-p5);
   background: var(--gradiente);
-  font-size: 1.8rem;
-  line-height: 1.33;
+  font: var(--poppins-mb);
   padding: 16px 32px;
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 600;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 .btn:hover {
   background: var(--gradiente-destaque);
 }
 
-.btn-secundario{
-  background-color: var(--cor-10);
+.btn.secundario{
+  background: var(--cor-10);
   color: var(--cor-4);
-  font: var(--poppins-mb);
-  text-transform: uppercase;
-  padding: 16px 32px;
-  border-radius: 4px;
-  display: inline-block;
 }
-.btn-secundario:hover{
-  background-color: var(--cor-9);
+.btn.secundario:hover{
+  background: var(--cor-9);
+}
+
+.link{
+  display: inline-block;
+  font: var(--poppins-l);
+  color: var(--cor-p1);
+  text-transform: uppercase;
+  border-bottom: 4px solid var(--cor-p1);
+  position: relative;
+}
+
+.link:hover{
+  color: var(--cor-1);
+  border-bottom: 4px solid var(--cor-1);
 }
