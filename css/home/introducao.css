@@ -65,6 +65,13 @@
   }
 }
 @media (max-width:560px){
+  .introducao-informacao h1{
+    font-size: 4rem;
+  }
+
+  .introducao-informacao p {
+    font-size: 1.8rem;
+  }
   .introducao .btn{
     padding: 12px 16px;
     font-size: 1.6rem;
