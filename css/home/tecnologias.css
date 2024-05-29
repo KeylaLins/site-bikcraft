@@ -14,13 +14,6 @@
   gap: 80px;
 }
 
-.tecnologias-conteudo > span{
-  display: block;
-  font: var(--roboto-m);
-  color: var(--cor-5);
-  text-transform: uppercase;
-}
-
 .tecnologias-conteudo .titulo{
   color: var(--cor-0);
   text-transform: lowercase;

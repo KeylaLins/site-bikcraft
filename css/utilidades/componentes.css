@@ -12,6 +12,17 @@
   max-width: 1400px;
 }
 
+.titulo-bg{
+  background-color: var(--cor-11);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: var(--cor-0);
+}
+
+.ponto{
+  color: var(--cor-p1);
+}
+
 .btn {
   display: inline-block;
   color: var(--cor-p5);
@@ -47,4 +58,14 @@
 .link:hover{
   color: var(--cor-1);
   border-bottom: 4px solid var(--cor-1);
+}
+
+.detalhe::before{
+  content: "";
+  background-color: var(--cor-p1);
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  margin-right: 8px;
+  transition: ease-in-out 0.2s;
 }

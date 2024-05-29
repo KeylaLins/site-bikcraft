@@ -74,3 +74,10 @@
 .titulo {
   font: 600 6.4rem/1.125 "Poppins", sans-serif;
 }
+
+.subtitulo{
+  display: block;
+  font: var(--roboto-m);
+  color: var(--cor-5);
+  text-transform: uppercase;
+}
