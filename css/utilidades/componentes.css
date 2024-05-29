@@ -1,15 +1,7 @@
-.container1, .container2, .container3{
+.container{
   margin: 0 auto;
   padding: 0 20px;
-}
-.container1{
   max-width: 1200px;
-}
-.container2{
-  max-width: 1300px;
-}
-.container3{
-  max-width: 1400px;
 }
 
 .titulo-bg{
@@ -17,6 +9,12 @@
   padding-top: 40px;
   padding-bottom: 40px;
   color: var(--cor-0);
+}
+@media(max-width:400px){
+  .titulo-bg{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .ponto{
@@ -45,6 +43,22 @@
 }
 .btn.secundario:hover{
   background: var(--cor-9);
+}
+
+.btn.seta {
+  align-self: end;
+  justify-self: flex-end;
+}
+.btn.seta a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.btn.seta img{
+  transition: transform 0.3s;
+}
+.btn.seta:hover img{
+  transform: translateX(8px);
 }
 
 .link{

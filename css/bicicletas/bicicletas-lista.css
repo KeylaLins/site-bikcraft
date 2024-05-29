@@ -1,6 +1,7 @@
 .bicicletas-home {
   background-color: var(--cor-0);
   padding-bottom: 120px;
+  max-width: 1400px;
 }
 .bicicletas-home h2 {
   padding: 52px;

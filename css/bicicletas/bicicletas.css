@@ -1,6 +1,5 @@
 .bicicleta-bg {
-  background-color: var(--cor-11);
-  box-shadow: inset 200px 0 0 var(--cor-0);
+  background: linear-gradient(to right, var(--cor-0) 20%, var(--cor-11) 0%);
 }
 .bicicleta-bg .bicicleta h2 {
   color: var(--cor-0);
@@ -10,7 +9,8 @@
 }
 
 .bicicleta {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -18,8 +18,8 @@
 
 .bicicleta img {
   height: 100%;
-  max-width: 560px;
   object-fit: cover;
+  object-position: bottom right;
 }
 
 .bicicleta-img {
@@ -39,7 +39,7 @@
 
 .bicicleta-vantagens {
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .bicicleta-vantagens h2,
@@ -52,7 +52,7 @@
   font: var(--poppins-xl);
   color: var(--cor-11);
 }
-.bicicleta-vantagens h2::before{
+.bicicleta-vantagens h2::before {
   content: "";
   display: block;
   background-color: var(--cor-p1);
@@ -85,13 +85,53 @@
   width: max-content;
 }
 
-.btn.seta {
-  align-self: end;
-  justify-self: flex-end;
-  grid-column: 3;
+@media (max-width: 900px) {
+  .bicicleta-bg {
+    background: var(--cor-11);
+  }
+  .bicicleta {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .bicicleta {
+    gap: 20px;
+  }
+  .bicicleta-vantagens h2 {
+    font-size: 2.4rem;
+  }
+  .bicicleta-vantagens p,
+  .vantagens-item li p {
+    font-size: 1.6rem;
+  }
 }
-.btn.seta a {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+
+@media (max-width: 450px) {
+  /* .bicicleta-img img {
+    height: 300px;
+    width: 100%;
+    object-position: center;
+  } */
+  .bicicleta-vantagens {
+    grid-template-columns: 1fr;
+  }
+  .bicicleta-vantagens h2{
+    padding-top: 0px;
+  }
+  .bicicleta-vantagens > p{
+    padding: 12px 0;
+  }
+  .vantagens-item{
+    padding-bottom: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .vantagens-item li{
+    padding: 4px 0;
+  }
+  .btn.seta{
+    justify-self: flex-start;
+    font-size: 1.6rem;
+  }
 }
