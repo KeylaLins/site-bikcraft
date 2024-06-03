@@ -76,7 +76,6 @@
   padding: 16px 0;
   flex-wrap: wrap;
   position: relative;
-  border-radius: 4px;
 }
 .header-menu a:after {
   content: "";
@@ -90,6 +89,16 @@
 .header-menu a:hover:after {
   width: 100%;
   transition: ease-in-out 0.3s;
+}
+
+#bicicletas .header-menu li:nth-child(1) a::after{
+  width: 100%;
+}
+#seguros .header-menu li:nth-child(2) a::after{
+  width: 100%;
+}
+#contato .header-menu li:nth-child(3) a::after{
+  width: 100%;
 }
 
 @media (max-width: 768px) {
