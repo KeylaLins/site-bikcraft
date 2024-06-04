@@ -31,12 +31,6 @@
   text-transform: uppercase;
 }
 
-.subtitulo.secudario{
-  font-size: 1.2rem;
-  color: var(--cor-0);
-  padding-bottom: 12px;
-  }
-
 @media(max-width: 900px){
   .titulo{
     font-size: 4.4rem;
