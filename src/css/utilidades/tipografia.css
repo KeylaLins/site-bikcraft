@@ -17,6 +17,41 @@
   --roboto-m: 500 1.8rem/1.35 "Roboto", sans-serif;
   --roboto-l: 400 2.4rem/1.5 "Roboto", sans-serif;
   --roboto-lb: 500 2.4rem/1.5 "Roboto", sans-serif;
+  --roboto-xl: 500 3.2rem/1.25 "Roboto", sans-serif;
+}
+
+.titulo {
+  font: 600 6.4rem/1.125 "Poppins", sans-serif;
+}
+
+.subtitulo{
+  display: block;
+  font: var(--roboto-m);
+  color: var(--cor-5);
+  text-transform: uppercase;
+}
+
+.subtitulo.secudario{
+  font-size: 1.2rem;
+  color: var(--cor-0);
+  padding-bottom: 12px;
+  }
+
+@media(max-width: 900px){
+  .titulo{
+    font-size: 4.4rem;
+  }
+  .subtitulo{
+    font-size: 1.6rem;
+  }
+}
+@media(max-width: 400px){
+  .titulo{
+    font-size: 4rem;
+  }
+  .subtitulo{
+    font-size: 1.2rem;
+  }
 }
 
 /* .poppins-xs {
@@ -70,31 +105,3 @@
 .roboto-xl {
   font: 600 3.2rehm/1.25 "Roboto", sans-serif;
 } */
-
-.titulo {
-  font: 600 6.4rem/1.125 "Poppins", sans-serif;
-}
-
-.subtitulo{
-  display: block;
-  font: var(--roboto-m);
-  color: var(--cor-5);
-  text-transform: uppercase;
-}
-
-@media(max-width: 900px){
-  .titulo{
-    font-size: 4.4rem;
-  }
-  .subtitulo{
-    font-size: 1.6rem;
-  }
-}
-@media(max-width: 400px){
-  .titulo{
-    font-size: 4rem;
-  }
-  .subtitulo{
-    font-size: 1.2rem;
-  }
-}

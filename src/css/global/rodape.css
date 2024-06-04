@@ -12,7 +12,7 @@
 }
 
 .contato h3,
-.informacoes h3 {
+.rodape-informacoes h3 {
   color: var(--cor-0);
   font: var(--roboto-l);
   text-transform: uppercase;
@@ -51,12 +51,12 @@
   transform: scale(1.2, 1.2);
 }
 
-.informacoes ul li {
+.rodape-informacoes ul li {
   font: var(--poppins-m);
   color: var(--cor-5);
   padding: 10px 0;
 }
-.informacoes ul a:hover {
+.rodape-informacoes ul a:hover {
   color: var(--cor-0);
 }
 
