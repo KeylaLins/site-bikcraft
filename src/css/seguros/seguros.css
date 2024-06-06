@@ -16,7 +16,7 @@
   grid-column: 1 / -1;
 }
 
-.seguro-plano {
+.seguros-plano {
   background-color: var(--cor-12);
   padding: 32px;
   padding-left: 64px;
@@ -26,12 +26,12 @@
   gap: 20px;
 }
 
-.seguro-plano h3 {
+.seguros-plano h3 {
   font: var(--poppins-xl);
   text-transform: uppercase;
   color: var(--cor-6);
 }
-.seguro-plano:last-child h3 {
+.seguros-plano:last-child h3 {
   color: var(--cor-p1);
 }
 
@@ -47,7 +47,7 @@
   color: var(--cor-6);
 }
 
-.seguro-plano ul {
+.seguros-plano ul {
   grid-column: 1 / -1;
   color: var(--cor-0);
   font: var(--roboto-m);
@@ -55,11 +55,11 @@
   position: relative;
 }
 
-.seguro-plano ul li {
+.seguros-plano ul li {
   display: flex;
   align-items: center;
 }
-.seguro-plano ul li::before {
+.seguros-plano ul li::before {
   content: "";
   background-image: url("../../img/icones/lista.svg");
   width: 12px;
@@ -68,8 +68,8 @@
   left: -24px;
 }
 
-.seguro-plano .btn,
-.seguro-plano .btn.secundario {
+.seguros-plano .btn,
+.seguros-plano .btn.secundario {
   grid-column: 1/-1;
   justify-self: start;
 }
@@ -83,21 +83,21 @@
     grid-template-columns: 1fr;
     padding-top: 32px;
   }
-  .seguro-plano h3,
-  .seguro-plano .seguros-preco {
+  .seguros-plano h3,
+  .seguros-plano .seguros-preco {
     font-size: 2.8rem;
   }
 }
 
 @media (max-width: 450px) {
-  .seguro-plano h3,
-  .seguro-plano .seguros-preco {
+  .seguros-plano h3,
+  .seguros-plano .seguros-preco {
     font-size: 2rem;
   }
-  .seguro-plano ul{
+  .seguros-plano ul{
     font-size: 1.4rem;
   }
-  .seguro-plano .btn{
+  .seguros-plano .btn{
     font-size: 1.4rem;
   }
 }
