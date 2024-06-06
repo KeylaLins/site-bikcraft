@@ -75,7 +75,7 @@
   border-bottom: 4px solid var(--cor-1);
 }
 
-/* .detalhe::before{
+.detalhe::before{
   content: "";
   background-color: var(--cor-p1);
   width: 12px;
@@ -83,4 +83,4 @@
   display: inline-block;
   margin-right: 8px;
   transition: ease-in-out 0.2s;
-} */
+}
