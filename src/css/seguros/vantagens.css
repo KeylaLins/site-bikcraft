@@ -11,7 +11,7 @@
 
 .seguros-vantagens ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, max-content));
   gap: 40px 80px;
 }
 
@@ -27,4 +27,19 @@
 .seguros-vantagens p {
   font: var(--roboto-s);
   color: var(--cor-6);
+}
+
+@media (max-width: 800px){
+  .seguros-vantagens{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px){
+    .seguros-vantagens ul li{
+      background-color: var(--cor-11);
+      border-radius: 4px;
+      padding: 20px;
+    }
 }
