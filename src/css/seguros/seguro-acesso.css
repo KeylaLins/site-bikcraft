@@ -44,8 +44,6 @@
     grid-template-columns: 1fr;
     padding-top: 40px;
   }
-  .seguro-foto{
-  }
   .seguro-foto img{
     object-position: top;
     max-height: 400px;

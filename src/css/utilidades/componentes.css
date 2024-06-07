@@ -16,6 +16,9 @@
     padding-bottom: 20px;
   }
 }
+.titulo-bg .titulo{
+  text-transform: lowercase;
+}
 
 .ponto{
   color: var(--cor-p1);
@@ -75,7 +78,8 @@
   border-bottom: 4px solid var(--cor-1);
 }
 
-.detalhe::before{
+.detalhe::before,
+.perguntas li h3::before{
   content: "";
   background-color: var(--cor-p1);
   width: 12px;
@@ -83,4 +87,11 @@
   display: inline-block;
   margin-right: 8px;
   transition: ease-in-out 0.2s;
+}
+
+.perguntas li h3::before{
+  margin: 0;
+  position: absolute;
+  left: -20px;
+  top: 8px;
 }

@@ -9,6 +9,9 @@
   gap: 40px;
   align-items: center;
 }
+#seguros .seguros {
+  padding: 40px 0;
+}
 
 .seguros .titulo {
   color: var(--cor-0);
@@ -74,7 +77,6 @@
   justify-self: start;
 }
 
-
 @media (max-width: 850px) {
   .seguros .titulo {
     font-size: 4rem;
@@ -94,10 +96,10 @@
   .seguros-plano .seguros-preco {
     font-size: 2rem;
   }
-  .seguros-plano ul{
+  .seguros-plano ul {
     font-size: 1.4rem;
   }
-  .seguros-plano .btn{
+  .seguros-plano .btn {
     font-size: 1.4rem;
   }
 }

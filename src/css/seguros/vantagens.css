@@ -1,0 +1,30 @@
+.seguros-vantagens {
+  background-color: var(--cor-12);
+  color: var(--cor-0);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.seguros-vantagens h2 {
+  padding-bottom: 60px;
+}
+
+.seguros-vantagens ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 80px;
+}
+
+.seguros-vantagens img {
+  width: 32px;
+}
+
+.seguros-vantagens h3 {
+  font: var(--poppins-l);
+  font-weight: 500;
+}
+
+.seguros-vantagens p {
+  font: var(--roboto-s);
+  color: var(--cor-6);
+}
