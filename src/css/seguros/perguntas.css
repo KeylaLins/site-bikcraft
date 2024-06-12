@@ -3,49 +3,59 @@
   padding-bottom: 120px;
 }
 
-.perguntas ul{
+.perguntas dl {
   padding-top: 80px;
 }
 
-.perguntas li{
+.perguntas dl > div {
   padding: 20px;
-  padding-left: 40px;
   border-radius: 4px;
 }
-.perguntas li:nth-child(odd) {
+.perguntas dl > div:nth-child(odd) {
   background-color: var(--cor-1);
 }
 
-.perguntas ul span{
+/* .perguntas ul span{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.perguntas ul span img{
+/* .perguntas ul span img{
   width: 14px;
-  transition: ease-in-out 0.2s;
-}
+} */
 
-.perguntas ul li h3{
+.perguntas dt {
   font: var(--poppins-mb);
   color: var(--cor-11);
   position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }
 
-.perguntas ul li p{
+.perguntas dt::before {
+  content: "";
+  display: inline-block;
+  background-color: var(--cor-p1);
+  width: 12px;
+  height: 8px;
+}
+
+.perguntas dt::after {
+  content: url("../../img/icones/seta-abrir.svg");
+  transition: 0.3s;
+}
+.perguntas dt:hover:after{
+  transform: rotate(180deg)
+}
+
+.perguntas dd {
   padding-top: 16px;
+  padding-left: 20px;
   font: var(--roboto-s);
   color: var(--cor-9);
-  display: none;
-}
-
-.perguntas input{
-  /* display: none; */
-}
-.perguntas input:checked ~ label > p{
-  display: block;
-}
-.perguntas input:checked ~ label img{
-  transform: rotate(180deg)
+  max-width: 120ch;
 }

@@ -88,10 +88,3 @@
   margin-right: 8px;
   transition: ease-in-out 0.2s;
 }
-
-.perguntas li h3::before{
-  margin: 0;
-  position: absolute;
-  left: -20px;
-  top: 8px;
-}
