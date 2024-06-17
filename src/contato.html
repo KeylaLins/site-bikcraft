@@ -49,17 +49,20 @@
     <div class="container">
       <p class="subtitulo">Respostas em até 24h</p>
       <h1 class="titulo">nosso contato<span class="ponto">.</span></h1>
+    </div>
 
+    <div class="contato-informacoes container">
       <div class="endereco">
         <p>Loja online</p>
 
-        <ul>
+        <ul class="contato-mensagem">
           <li>
             <img src="./img/icones/local.svg" alt="">
             <p>Rua Ali Perto, 42</p>
             <p>Rio de Janeiro - RJ</p>
             <p>Brasil - América</p>
           </li>
+
           <li>
             <img src="./img/icones/email.svg" alt="">
             <p>vendas@bikcraft.com</p>
@@ -82,17 +85,25 @@
       </div>
 
       <form action="" method="get" class="mensagem">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" Placeholder="Seu nome">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" Placeholder="Seu nome">
+        </div>
 
-        <label for="telefone">Telefone</label>
-        <input type="number" name="telefone" id="telefone" Placeholder="(14) 9999-9999">
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="number" name="telefone" id="telefone" Placeholder="(14) 9999-9999">
+        </div>
 
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" Placeholder="contato@email.com">
+        <div>
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" Placeholder="contato@email.com">
+        </div>
 
-        <label for="">Mensagem</label>
-        <textarea name="texto" id="mensagem">O que você precisa?</textarea>
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea name="texto" id="mensagem">O que você precisa?</textarea>
+        </div>
 
         <input type="submit" value="Enviar mensagem" class="btn">
       </form>
