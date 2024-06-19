@@ -5,13 +5,11 @@
 .contato-informacoes {
   display: grid;
   grid-template-columns: auto auto;
-  padding-top: 60px;
-  padding-top: 60px;
 }
 
 .endereco,
 .mensagem {
-  padding: 40px;
+  padding: 60px;
 }
 
 .endereco {
@@ -45,7 +43,7 @@
   grid-column: 2;
 }
 
-#contato .redes{
+#contato .contato-informacoes .redes{
   padding: 0;
 }
 #contato .endereco .fa-facebook,

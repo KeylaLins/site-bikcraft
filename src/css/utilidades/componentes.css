@@ -6,8 +6,6 @@
 
 .titulo-bg{
   background-color: var(--cor-11);
-  padding-top: 40px;
-  padding-bottom: 40px;
   color: var(--cor-0);
 }
 @media(max-width:400px){
@@ -18,6 +16,10 @@
 }
 .titulo-bg .titulo{
   text-transform: lowercase;
+}
+.inicio{
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .ponto{
