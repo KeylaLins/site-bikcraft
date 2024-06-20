@@ -1,36 +1,39 @@
-.locais-bg{
+.locais-bg {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: var(--cor-1);
 }
 
-.locais{
+.locais {
   padding-top: 60px;
   display: flex;
   gap: 40px;
 }
 
-.local{
+.local {
   background-color: var(--cor-0);
   border-radius: 4px;
 }
 
-.local img{
+.local > img {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  min-height: 180px;
+  object-fit: cover;
+  position: left;
 }
 
-.local-conteudo{
+.local-conteudo {
   padding: 32px;
   padding-left: 60px;
 }
 
-.local-conteudo h3{
+.local-conteudo h3 {
   font: var(--poppins-xl);
   position: relative;
 }
 
-.local-conteudo ul{
+.local-conteudo ul {
   font: var(--roboto-s);
   color: var(--cor-8);
   display: grid;
@@ -38,19 +41,56 @@
   padding: 32px 0;
 }
 
-.local-conteudo ul li{
-  border-left: 1px solid var(--cor-2);
+.local-conteudo ul p {
+  border-left: 2px solid var(--cor-2);
   padding-left: 12px;
   line-height: 2;
 }
 
-.local-conteudo > p{
+.local-conteudo > p {
   font: var(--poppins-s);
   color: var(--cor-12);
-  font-weight: 600;
+  font-weight: 500;
 }
-.local-conteudo > p{
+.local-conteudo > p {
   display: flex;
   gap: 8px;
-  align-items: end;
+}
+
+@media (max-width: 900px) {
+  .locais-bg {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .locais-bg .titulo {
+    padding-bottom: 0;
+  }
+  .locais {
+    padding-top: 32px;
+  }
+  .local-conteudo{
+    padding: 32px;
+  }
+  .local-conteudo h3{
+    font-size: 2.4rem;
+  }
+  .local-conteudo ul{
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+  }
+  .local-conteudo ul li:nth-child(2){
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 600px){
+  .locais{
+    flex-wrap: wrap;
+  }
+  .local-conteudo{
+    padding: 34px;
+  }
+  .local-conteudo ul{
+    grid-template-columns: 1fr;
+  }
 }
