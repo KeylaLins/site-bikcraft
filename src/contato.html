@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seguros | Bikcraft</title>
+  <title>Contato | Bikcraft</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,61 +52,59 @@
     </div>
 
     <div class="contato-informacoes container">
-      <div class="endereco">
+      <section class="endereco" aria-label="Endereço">
         <p>Loja online</p>
 
-        <ul class="contato-mensagem">
-          <li>
-            <img src="./img/icones/local.svg" alt="">
-            <p>Rua Ali Perto, 42</p>
-            <p>Rio de Janeiro - RJ</p>
-            <p>Brasil - América</p>
-          </li>
-
-          <li>
-            <img src="./img/icones/email.svg" alt="">
-            <p>vendas@bikcraft.com</p>
-            <p>assistencia@bikcraft.com</p>
-          </li>
-
-          <li>
-            <img src="./img/icones/telefone.svg" alt="">
-            <p>+55 21 9999-9999</p>
-          </li>
-        </ul>
-
-        <nav>
-          <ul class="redes">
-            <li><i class="fab fa-facebook"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
-          </ul>
-        </nav>
-      </div>
-
-      <form action="" method="get" class="mensagem">
         <div>
-          <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" Placeholder="Seu nome">
+          <p>Rua Ali lierto, 42</p>
+          <p>Rio de Janeiro - RJ</p>
+          <p>Brasil - América</p>
         </div>
 
-        <div>
-          <label for="telefone">Telefone</label>
-          <input type="number" name="telefone" id="telefone" Placeholder="(14) 9999-9999">
-        </div>
+        <address class="contato-meios">
+          <a href="maito:keylalinskl00@gmail.com">vendas@bikcraft.com</a>
+          <a href="maito:keylalinskl00@gmail.com">assistencia@bikcraft.com</a>
+          <a href="tel:+551499999999">+55 21 9999-9999</a>
+        </address>
 
-        <div>
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" Placeholder="contato@email.com">
+        <div class="contato-redes">
+          <a href="./">
+            <img src="./img/redes/facebook-p.svg" alt="">
+          </a>
+          <a href="./">
+            <img src="./img/redes/instagram-p.svg" alt="">
+          </a>
+          <a href="./">
+            <img src="./img/redes/youtube-p.svg" alt="">
+          </a>
         </div>
+      </section>
 
-        <div>
-          <label for="mensagem">Mensagem</label>
-          <textarea name="texto" id="mensagem">O que você precisa?</textarea>
-        </div>
+      <section aria-label="Formulário">
+        <form action="" method="get" class="mensagem">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" Placeholder="Seu nome">
+          </div>
 
-        <input type="submit" value="Enviar mensagem" class="btn">
-      </form>
+          <div>
+            <label for="telefone">Telefone</label>
+            <input type="number" name="telefone" id="telefone" Placeholder="(14) 9999-9999">
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" Placeholder="contato@email.com">
+          </div>
+
+          <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="texto" id="mensagem">O que você precisa?</textarea>
+          </div>
+
+          <button class="btn">Enviar mensagem</button>
+        </form>
+      </section>
     </div>
   </main>
 
@@ -134,11 +132,11 @@
                 <p>21 9999-9999</p>
               </li>
             </ul>
-            
+
             <p><img src="./img/icones/horario.svg" alt=""> 08-18 de seg à dom</p>
           </div>
         </div>
-        
+
         <div class="local">
           <img src="./img/lojas/rj.jpg" alt="">
 
@@ -158,7 +156,7 @@
                 <p>21 9999-9999</p>
               </li>
             </ul>
-            
+
             <p><img src="./img/icones/horario.svg" alt=""> 08-18 de seg à dom</p>
           </div>
         </div>
@@ -180,13 +178,17 @@
           <p>Rua Ali Perto, 42 - Botafogo</p>
           <p>Rio de Janeiro - RJ</p>
         </div>
-
-        <nav>
-          <ul class="redes">
-            <li><i class="fab fa-facebook"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
-          </ul>
+        
+        <nav class="redes">
+          <a href="./">
+            <img src="./img/redes/facebook.svg" alt="Facebook">
+          </a>
+          <a href="./">
+            <img src="./img/redes/instagram.svg" alt="Instagram">
+          </a>
+          <a href="./">
+            <img src="./img/redes/youtube.svg" alt="Youtube">
+          </a>
         </nav>
       </div>
 
@@ -214,7 +216,6 @@
     <p class="direitos container">Bikcraft © Alguns direitos reservados.</p>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>

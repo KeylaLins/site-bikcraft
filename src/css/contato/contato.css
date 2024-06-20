@@ -45,11 +45,6 @@
 #contato .contato-informacoes .redes{
   padding: 0;
 }
-#contato .endereco .fa-facebook,
-#contato .endereco .fa-instagram,
-#contato .endereco .fa-youtube {
-  color: var(--cor-p1);
-}
 
 .mensagem {
   background-color: var(--cor-0);
