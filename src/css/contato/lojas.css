@@ -1,10 +1,10 @@
-.locais-bg {
+.lojas {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: var(--cor-1);
 }
 
-.locais {
+.lojas-item {
   padding-top: 60px;
   display: flex;
   gap: 40px;
@@ -13,84 +13,75 @@
 .local {
   background-color: var(--cor-0);
   border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .local > img {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: 4px 4px 0 0;
   min-height: 180px;
   object-fit: cover;
   position: left;
 }
 
 .local-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 32px;
   padding-left: 60px;
 }
 
-.local-conteudo h3 {
+.lojas-item h3 {
   font: var(--poppins-xl);
-  position: relative;
+  grid-column: 1/-1;
 }
 
-.local-conteudo ul {
+.lojas-item .local-descricao {
   font: var(--roboto-s);
   color: var(--cor-8);
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 32px 0;
-}
-
-.local-conteudo ul p {
+  margin: 32px 0;
   border-left: 2px solid var(--cor-2);
   padding-left: 12px;
   line-height: 2;
+}
+
+.lojas-item .local-descricao a {
+  display: block;
 }
 
 .local-conteudo > p {
   font: var(--poppins-s);
   color: var(--cor-12);
   font-weight: 500;
-}
-.local-conteudo > p {
   display: flex;
   gap: 8px;
+  grid-column: 1/-1;
+  align-items: center;
 }
 
 @media (max-width: 900px) {
-  .locais-bg {
+  .lojas {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .locais-bg .titulo {
+  .lojas .titulo {
     padding-bottom: 0;
   }
-  .locais {
-    padding-top: 32px;
+  .local-conteudo {
+    grid-template-columns: 1fr;
+    padding: 20px;
   }
-  .local-conteudo{
-    padding: 32px;
-  }
-  .local-conteudo h3{
+  .lojas-item h3 {
     font-size: 2.4rem;
   }
-  .local-conteudo ul{
-    grid-template-columns: 1fr;
-    padding: 20px 0;
-  }
-  .local-conteudo ul li:nth-child(2){
-    padding-bottom: 32px;
+  .lojas-item .local-descricao {
+    margin: 12px 0;
   }
 }
 
-@media (max-width: 600px){
-  .locais{
+@media (max-width: 600px) {
+  .lojas-item {
     flex-wrap: wrap;
-  }
-  .local-conteudo{
     padding: 34px;
-  }
-  .local-conteudo ul{
     grid-template-columns: 1fr;
   }
 }
