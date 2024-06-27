@@ -53,19 +53,21 @@
 
     <div class="contato-informacoes container">
       <section class="endereco" aria-label="Endereço">
-        <p>Loja online</p>
+        <h2>Loja online</h2>
 
-        <div>
-          <p>Rua Ali lierto, 42</p>
-          <p>Rio de Janeiro - RJ</p>
-          <p>Brasil - América</p>
+        <div class="meios">
+          <div class="endereco-local">
+            <p>Rua Ali lierto, 42</p>
+            <p>Rio de Janeiro - RJ</p>
+            <p>Brasil - América</p>
+          </div>
+
+          <address class="contato-meios">
+            <a href="maito:keylalinskl00@gmail.com">vendas@bikcraft.com</a>
+            <a href="maito:keylalinskl00@gmail.com">assistencia@bikcraft.com</a>
+            <a href="tel:+551499999999">+55 21 9999-9999</a>
+          </address>
         </div>
-
-        <address class="contato-meios">
-          <a href="maito:keylalinskl00@gmail.com">vendas@bikcraft.com</a>
-          <a href="maito:keylalinskl00@gmail.com">assistencia@bikcraft.com</a>
-          <a href="tel:+551499999999">+55 21 9999-9999</a>
-        </address>
 
         <div class="contato-redes">
           <a href="./">
@@ -81,7 +83,7 @@
       </section>
 
       <section aria-label="Formulário">
-        <form action="" method="get" class="mensagem">
+        <form action="" method="get" class="form">
           <div>
             <label for="nome">Nome</label>
             <input type="text" name="nome" id="nome" Placeholder="Seu nome">
@@ -92,14 +94,14 @@
             <input type="number" name="telefone" id="telefone" Placeholder="(14) 9999-9999">
           </div>
 
-          <div>
+          <div class="col-2">
             <label for="email">Email</label>
             <input type="email" name="email" id="email" Placeholder="contato@email.com">
           </div>
 
-          <div>
+          <div class="col-2">
             <label for="mensagem">Mensagem</label>
-            <textarea name="texto" id="mensagem">O que você precisa?</textarea>
+            <textarea name="texto" id="mensagem" rows="5">O que você precisa?</textarea>
           </div>
 
           <button class="btn">Enviar mensagem</button>
@@ -178,7 +180,7 @@
           <p>Rua Ali Perto, 42 - Botafogo</p>
           <p>Rio de Janeiro - RJ</p>
         </div>
-        
+
         <nav class="redes">
           <a href="./">
             <img src="./img/redes/facebook.svg" alt="Facebook">
