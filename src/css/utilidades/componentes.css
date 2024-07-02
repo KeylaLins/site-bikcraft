@@ -1,26 +1,26 @@
-.container{
+.container, .inicio{
   margin: 0 auto;
   padding: 0 20px;
   max-width: 1200px;
+}
+
+.inicio{
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .titulo-bg{
   background-color: var(--cor-11);
   color: var(--cor-0);
 }
+.titulo-bg .titulo{
+  text-transform: lowercase;
+}
 @media(max-width:400px){
   .titulo-bg{
     padding-top: 20px;
     padding-bottom: 20px;
   }
-}
-.titulo-bg .titulo{
-  text-transform: lowercase;
-}
-
-.inicio{
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .ponto{

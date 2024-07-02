@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seguros | Bikcraft</title>
+  <title>Orcamento | Bikcraft</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,210 +46,203 @@
   </header>
 
   <main class="titulo-bg">
-    <div class="container">
-      <div class="inicio">
-        <p class="subtitulo">Cotações no seu email</p>
-        <h1 class="titulo">Solicite um orçamento<span class="ponto">.</span></h1>
-      </div>
+    <div class="inicio">
+      <p class="subtitulo">Cotações no seu email</p>
+      <h1 class="titulo">Solicite um orçamento<span class="ponto">.</span></h1>
+    </div>
 
-      <div class="orcamento">
-        <div class="orcamento-dados">
-          <h2>Bikcraft ou seguro?</h2>
-          <div>
-            <input type="radio" name="orcamento" id="escolha"><span>Bikcraft</span>
-          </div>
-          <div>
-            <input type="radio" name="orcamento" id="escolha"><span>Seguro</span>
-          </div>
+    <form class="orcamento container" action="./">
+      <div class="orcamento-produto">
+        <h2>Bikcraft ou seguro?</h2>
 
-          <div class="orcamento-bicicleta">
-            <h2>Escolha a sua:</h2>
+        <input type="radio" name="tipo" id="bikcraft">
+        <label for="bikcraft">Bikcraft</label>
 
-            <div class="nimbus">
-              <p><input type="radio" name="bicicleta" id="escolha">Nimbus</p><span>R$ 4999</span>
+        <input type="radio" name="tipo" id="seguro">
+        <label for="seguro">Seguro</label>
 
-              <div>
-                <ul class="vantagens-item">
-                  <li>
-                    <img src="./img/icones/eletrica.svg" alt="">
-                    <p>Motor elétrico</p>
-                  </li>
+        <div class="orcamento-conteudo" id="orcamento-bikcraft">
+          <h2>Escolha a sua</h2>
 
-                  <li>
-                    <img src="./img/icones/carbono.svg" alt="">
-                    <p>Fibra de Carbono</p>
-                  </li>
+          <input type="radio" name="produto" id="nimbus"><label>Nimbus</label><span>R$ 4999</span>
+          <div id="nimbus-info">
+            <ul class="vantagens-item">
+              <li>
+                <img src="./img/icones/eletrica.svg" alt="">
+                <p>Motor elétrico</p>
+              </li>
 
-                  <li>
-                    <img src="./img/icones/velocidade.svg" alt="">
-                    <p>40 km/h</p>
-                  </li>
+              <li>
+                <img src="./img/icones/carbono.svg" alt="">
+                <p>Fibra de Carbono</p>
+              </li>
 
-                  <li>
-                    <img src="./img/icones/rastreador.svg" alt="">
-                    <p>Rastreador</p>
-                  </li>
-                </ul>
-                <img src="./img/bicicletas/nimbus.jpg" alt="">
-              </div>
-            </div>
+              <li>
+                <img src="./img/icones/velocidade.svg" alt="">
+                <p>40 km/h</p>
+              </li>
 
-            <div class="magic">
-              <p><input type="radio" name="bicicleta" id="escolha">Magic</p><span>R$ 4999</span>
-
-              <div>
-                <ul class="vantagens-item">
-                  <li>
-                    <img src="./img/icones/eletrica.svg" alt="">
-                    <p>Motor elétrico</p>
-                  </li>
-
-                  <li>
-                    <img src="./img/icones/carbono.svg" alt="">
-                    <p>Fibra de Carbono</p>
-                  </li>
-
-                  <li>
-                    <img src="./img/icones/velocidade.svg" alt="">
-                    <p>40 km/h</p>
-                  </li>
-
-                  <li>
-                    <img src="./img/icones/rastreador.svg" alt="">
-                    <p>Rastreador</p>
-                  </li>
-                </ul>
-                <img src="./img/bicicletas/nimbus.jpg" alt="">
-              </div>
-            </div>
-            
-            <div class="nebula">
-              <p><input type="radio" name="bicicleta" id="escolha">Nebula</p><span>R$ 4999</span>
-
-              <div>
-                <ul class="vantagens-item">
-                  <li>
-                    <img src="./img/icones/eletrica.svg" alt="">
-                    <p>Motor elétrico</p>
-                  </li>
-
-                  <li>
-                    <img src="./img/icones/carbono.svg" alt="">
-                    <p>Fibra de Carbono</p>
-                  </li>
-
-                  <li>
-                    <img src="./img/icones/velocidade.svg" alt="">
-                    <p>40 km/h</p>
-                  </li>
-
-                  <li>
-                    <img src="./img/icones/rastreador.svg" alt="">
-                    <p>Rastreador</p>
-                  </li>
-                </ul>
-                <img src="./img/bicicletas/nimbus.jpg" alt="">
-              </div>
-            </div>
+              <li>
+                <img src="./img/icones/rastreador.svg" alt="">
+                <p>Rastreador</p>
+              </li>
+            </ul>
+            <img src="./img/bicicletas/nimbus.jpg" alt="">
           </div>
 
-          <div class="orcamento-seguro">
-            <div>
-              <input type="radio" name="seguro" id="seguro"><p>Prata</p><span>R$ 199</span>
-            </div>
+          <input type="radio" name="produto" id="magic"><label>Magic</label><span>R$ 4999</span>
+          <div id="magic-info">
+            <ul class="vantagens-item">
+              <li>
+                <img src="./img/icones/eletrica.svg" alt="">
+                <p>Motor elétrico</p>
+              </li>
 
-            <div>
-              <input type="radio" name="seguro" id="seguro"><p>Prata</p><span>R$ 199</span>
-            </div>
+              <li>
+                <img src="./img/icones/carbono.svg" alt="">
+                <p>Fibra de Carbono</p>
+              </li>
+
+              <li>
+                <img src="./img/icones/velocidade.svg" alt="">
+                <p>40 km/h</p>
+              </li>
+
+              <li>
+                <img src="./img/icones/rastreador.svg" alt="">
+                <p>Rastreador</p>
+              </li>
+            </ul>
+            <img src="./img/bicicletas/nimbus.jpg" alt="">
+          </div>
+
+          <input type="radio" name="produto" id="nebula"><label>Nebula</label><span>R$ 4999</span>
+          <div id="nebula-info">
+            <ul class="vantagens-item">
+              <li>
+                <img src="./img/icones/eletrica.svg" alt="">
+                <p>Motor elétrico</p>
+              </li>
+
+              <li>
+                <img src="./img/icones/carbono.svg" alt="">
+                <p>Fibra de Carbono</p>
+              </li>
+
+              <li>
+                <img src="./img/icones/velocidade.svg" alt="">
+                <p>40 km/h</p>
+              </li>
+
+              <li>
+                <img src="./img/icones/rastreador.svg" alt="">
+                <p>Rastreador</p>
+              </li>
+            </ul>
+            <img src="./img/bicicletas/nimbus.jpg" alt="">
           </div>
         </div>
 
-        <form class="form" action="/" method="get">
-          <h2 class="col-2">Dados pessoais</h2>
-          <h2 class="col-2">Dados pessoais</h2>
-
-          <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" Placeholder="Primeiro nome">
-          </div>
-          <div>
-            <label for="sobrenome">Sobrenome</label>
-            <input type="text" name="sobrenome" id="nome" Placeholder="Sobrenome">
-          </div>
-          <div class="col-2">
-            <label for="cpf">CPF</label>
-            <input type="number" name="cpf" id="cpf" Placeholder="000.000.000-00">
-          </div>
-          <div class="col-2">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" Placeholder="contato@email.com">
-          </div>
-
-          <h2 class="col-2">Entrega</h2>
-
-          <div>
-            <label for="cep">CEP</label>
-            <input type="number" name="cep" id="cep" Placeholder="00.000-00">
+        <div class="orcamento-conteudo" id="orcamento-seguro">
+          <h2>Escolha o plano</h2>
+          <!-- <div>
+            <input type="radio" name="seguro" id="seguro">
+            <p>Prata</p><span>R$ 199</span>
           </div>
 
           <div>
-            <label for="numero">Número</label>
-            <input type="number" name="numero" id="numero">
-          </div>
-
-          <div>
-            <label for="logradouro">Logradouro</label>
-            <input type="text" name="logradouro" id="logradouro" placeholder="Avenida, apartamento...">
-          </div>
-
-          <div>
-            <label for="bairro">Bairro</label>
-            <input type="text" name="bairro" id="bairro">
-          </div>
-
-          <div>
-            <label for="cidade">Ourinhos</label>
-            <input type="text" name="cidade" id="cidade">
-          </div>
-
-          <div>
-            <label for="estado">Estado</label>
-            <select name="estado" id="estado">
-              <option value="">Selecione</option>
-              <option value="AC">Acre</option>
-              <option value="AL">Alagoas</option>
-              <option value="AP">Amapá</option>
-              <option value="AM">Amazonas</option>
-              <option value="BA">Bahia</option>
-              <option value="CE">Ceará</option>
-              <option value="DF">Distrito Federal</option>
-              <option value="ES">Espírito Santo</option>
-              <option value="GO">Goiás</option>
-              <option value="MA">Maranhão</option>
-              <option value="MT">Mato Grosso</option>
-              <option value="MS">Mato Grosso do Sul</option>
-              <option value="MG">Minas Gerais</option>
-              <option value="PA">Pará</option>
-              <option value="PB">Paraíba</option>
-              <option value="PR">Paraná</option>
-              <option value="PE">Pernambuco</option>
-              <option value="PI">Piauí</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="RN">Rio Grande do Norte</option>
-              <option value="RS">Rio Grande do Sul</option>
-              <option value="RO">Rondônia</option>
-              <option value="RR">Roraima</option>
-              <option value="SC">Santa Catarina</option>
-              <option value="SP">São Paulo</option>
-              <option value="SE">Sergipe</option>
-              <option value="TO">Tocantins</option>
-            </select>
-          </div>
-
-
-          <input type="submit" value="Solicitar orçamento" class="btn col-2">
-        </form>
+            <input type="radio" name="seguro" id="seguro">
+            <p>Prata</p><span>R$ 199</span>
+          </div> -->
+        </div>
       </div>
+
+      <div class="orcamento-dados form">
+        <h2 class="col-2">Dados pessoais</h2>
+        <h2 class="col-2">Dados pessoais</h2>
+
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" Placeholder="Primeiro nome">
+        </div>
+        <div>
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" name="sobrenome" id="nome" Placeholder="Sobrenome">
+        </div>
+        <div class="col-2">
+          <label for="cpf">CPF</label>
+          <input type="number" name="cpf" id="cpf" Placeholder="000.000.000-00">
+        </div>
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" Placeholder="contato@email.com">
+        </div>
+
+        <h2 class="col-2">Entrega</h2>
+
+        <div>
+          <label for="cep">CEP</label>
+          <input type="number" name="cep" id="cep" Placeholder="00.000-00">
+        </div>
+
+        <div>
+          <label for="numero">Número</label>
+          <input type="number" name="numero" id="numero">
+        </div>
+
+        <div>
+          <label for="logradouro">Logradouro</label>
+          <input type="text" name="logradouro" id="logradouro" placeholder="Avenida, apartamento...">
+        </div>
+
+        <div>
+          <label for="bairro">Bairro</label>
+          <input type="text" name="bairro" id="bairro">
+        </div>
+
+        <div>
+          <label for="cidade">Ourinhos</label>
+          <input type="text" name="cidade" id="cidade">
+        </div>
+
+        <div>
+          <label for="estado">Estado</label>
+          <select name="estado" id="estado">
+            <option value="">Selecione</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </div>
+
+
+        <input type="submit" value="Solicitar orçamento" class="btn col-2">
+      </div>
+    </form>
     </div>
   </main>
 
