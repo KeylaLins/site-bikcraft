@@ -21,7 +21,7 @@ textarea {
 .form label + input[type="text"],
 .form label + input[type="email"],
 .form label + input[type="number"],
-textarea {
+textarea, select {
   background-color: var(--cor-1);
   border: 1px solid var(--cor-2);
   padding: 12px 12px;
