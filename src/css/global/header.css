@@ -73,7 +73,7 @@
 
 .header-menu a {
   color: var(--cor-0);
-  display: inline;
+  display: inline-block;
   flex-wrap: wrap;
   position: relative;
 }
@@ -119,11 +119,17 @@
 }
 
 @media (max-width: 560px) {
-  .header .menu {
+  .header .menu{
     display: block;
   }
   .header-menu {
     display: none;
+  }
+
+  .header-menu :hover, 
+  .header-menu a,
+  .header-menu a:hover{
+    background: none;
   }
   
   .header input:checked ~ .header-menu {
@@ -142,7 +148,7 @@
     text-align: center;
   }
   .header-menu :hover {
-    background-color: var(--cor-10);
+    background-color: var(--cor-9);
     border-radius: 4px;
   }
 }
