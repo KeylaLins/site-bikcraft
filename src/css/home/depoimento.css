@@ -1,4 +1,5 @@
 .depoimento {
+  background: url(../../img/dec/bottom-right-p.svg) no-repeat bottom 20px right 20px;
   background-color: var(--cor-p1);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -82,5 +83,11 @@
   }
   .depoimento-conteudo .depoimento-nome{
     font-size: 1.6rem;
+  }
+}
+
+@media (min-width:1200px){
+  .depoimento img{
+    max-height: 600px;
   }
 }

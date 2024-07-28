@@ -16,6 +16,10 @@
 .titulo-bg .titulo{
   text-transform: lowercase;
 }
+
+.titulo{
+  background: url(../../img/dec/top-right.svg) no-repeat top right;
+}
 @media(max-width:400px){
   .titulo-bg{
     padding-top: 20px;
