@@ -26,6 +26,11 @@
 .titulo{
   background: url(../../img/dec/top-right.svg) no-repeat top right;
 }
+@media(max-width: 800px){
+  .titulo{
+    background-size: 34px;
+  }
+}
 
 .ponto{
   color: var(--cor-p1);
