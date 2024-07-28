@@ -1,0 +1,22 @@
+.termos{
+  background-color: var(--cor-0);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.topico{
+  padding: 20px 0;
+  max-width: 132ch;
+}
+
+.topico h2{
+  font: var(--poppins-xl);
+  color: var(--cor-11);
+  padding-bottom: 20px;
+}
+
+.topico ul li p{
+font: var(--roboto-m);
+color: var(--cor-10);
+padding-bottom: 20px;
+}
