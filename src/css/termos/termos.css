@@ -20,3 +20,15 @@ font: var(--roboto-m);
 color: var(--cor-10);
 padding-bottom: 20px;
 }
+
+@media (max-width: 560px){
+  .termos{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 400px){
+  .topico h2{
+    font-size: 2.4em;
+  }
+}
