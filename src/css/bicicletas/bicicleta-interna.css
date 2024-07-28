@@ -17,11 +17,11 @@
   flex-wrap: wrap;
   gap: 20px;
 }
-.bicicleta-interna .fotos a {
+.bicicleta-interna .fotos img {
   flex: 1;
   min-width: 200px;
 }
-.bicicleta-interna .fotos a:first-child {
+.bicicleta-interna .fotos img:first-child {
   min-width: 100%;
 }
 

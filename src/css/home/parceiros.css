@@ -37,9 +37,6 @@
   }
 }
 @media (max-width: 900px){
-  .parceiros .titulo{
-    font-size: 4rem;
-  }
   .parceiros-marcas{
     grid-template-columns: 1fr 1fr;
   }

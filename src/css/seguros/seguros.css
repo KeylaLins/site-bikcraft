@@ -78,9 +78,6 @@
 }
 
 @media (max-width: 850px) {
-  .seguros .titulo {
-    font-size: 4rem;
-  }
   .seguros {
     grid-template-columns: 1fr;
     padding-top: 32px;

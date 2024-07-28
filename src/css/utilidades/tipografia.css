@@ -31,18 +31,15 @@
   text-transform: uppercase;
 }
 
-@media(max-width: 900px){
+@media(max-width: 800px){
   .titulo{
-    font-size: 4.4rem;
+    font-size: 3rem;
   }
   .subtitulo{
     font-size: 1.6rem;
   }
 }
 @media(max-width: 400px){
-  .titulo{
-    font-size: 4rem;
-  }
   .subtitulo{
     font-size: 1.2rem;
   }
