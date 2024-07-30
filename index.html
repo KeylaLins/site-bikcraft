@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bicicletas feitas sob medida para você">
   <title>Bikcraft</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,9 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./src/css/style.css">
-
+  <link rel="preload" href="./src/css/style.css" as="style">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <link rel="shortcut icon" href="./src/img/favicon.svg" type="image/x-icon">
 </head>
 
@@ -21,7 +21,7 @@
   <header class="header-bg">
     <div class="header container">
       <a href="./index.html">
-        <img src="./src/img/bikcraft.svg" alt="logo" class="logo">
+        <img src="./src/img/bikcraft.svg" alt="Bikcraft" class="logo" width="136" height="32">
       </a>
 
       <nav aria-label="primária">
@@ -46,7 +46,7 @@
       </nav>
     </div>
   </header>
-  
+
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-informacao">
@@ -58,8 +58,12 @@
       </div>
 
       <div class="introducao-imagem">
-        <img src="./src/img/bicicleta/nimbus.jpg" alt="bicicleta eletrica preta">
+
       </div>
+      <picture>
+        <source srcset="./src/img/bicicleta/nimbus.jpg" media="(max-width: 850px)">
+        <img src="./src/img/bicicletas/nimbus-home.jpg" alt="bicicleta eletrica preta">
+      </picture>
     </div>
   </main>
 
@@ -69,7 +73,7 @@
     <ul class="bicicletas-lista">
       <li>
         <a href="./src/bicicletas/magic.html">
-          <img src="./src/img/bicicletas/magic-home.jpg" alt="bicicleta magic might">
+          <img src="./src/img/bicicletas/magic-home.jpg" alt="bicicleta magic might" width="920" height="1040">
 
           <div class="descricoes">
             <h3 class="detalhe">Magic might</h3>
@@ -80,7 +84,7 @@
 
       <li>
         <a href="./src/bicicletas/nimbus.html">
-          <img src="./src/img/bicicletas/nimbus-home.jpg" alt="bicicleta nimbus stark">
+          <img src="./src/img/bicicletas/nimbus-home.jpg" alt="bicicleta nimbus stark" width="920" height="1040">
 
           <div class="descricoes">
             <h3 class="detalhe">Nimbus Stark</h3>
@@ -91,7 +95,7 @@
 
       <li>
         <a href="./src/bicicletas/nebula.html">
-          <img src="./src/img/bicicletas/nebula-home.jpg" alt="nebula cosmic">
+          <img src="./src/img/bicicletas/nebula-home.jpg" alt="nebula cosmic" width="920" height="1040">
 
           <div class="descricoes">
             <h3 class="detalhe">Nebula Cosmic</h3>
@@ -115,7 +119,7 @@
 
         <div class="tecnologias-vantagens">
           <div class="tecnologias-itens">
-            <img src="./src/img/icones/eletrica.svg" alt="">
+            <img src="./src/img/icones/eletrica.svg" alt="" width="24" height="24">
 
             <h4>Motor eletrico</h4>
 
@@ -123,7 +127,7 @@
           </div>
 
           <div class="tecnologias-itens">
-            <img src="./src/img/icones/rastreador.svg" alt="">
+            <img src="./src/img/icones/rastreador.svg" alt="" width="24" height="24">
 
             <h4>Rastreador</h4>
 
@@ -133,45 +137,45 @@
       </div>
 
       <div class="tecnologias-img">
-        <img src="./src/img/fotos/tecnologia.jpg" alt="tecnologia">
+        <img src="./src/img/fotos/tecnologia.jpg" alt="tecnologia" width="1200" height="1920">
       </div>
     </div>
   </article>
 
   <section class="container parceiros" aria-label="Nossos parceiros">
-      <h1 class="titulo">Nossos parceiros<span class="ponto">.</span></h1>
+    <h1 class="titulo">Nossos parceiros<span class="ponto">.</span></h1>
 
-      <ul class="parceiros-marcas">
-        <li>
-          <img src="./src/img/parceiros/caravan.svg" alt="caravan">
-        </li>
-        <li>
-          <img src="./src/img/parceiros/ranek.svg" alt="caravan">
-        </li>
-        <li>
-          <img src="./src/img/parceiros/handel.svg" alt="caravan">
-        </li>
-        <li>
-          <img src="./src/img/parceiros/dogs.svg" alt="caravan">
-        </li>
-        <li>
-          <img src="./src/img/parceiros/lescone.svg" alt="caravan">
-        </li>
-        <li>
-          <img src="./src/img/parceiros/flexblog.svg" alt="caravan">
-        </li>
-        <li>
-          <img src="./src/img/parceiros/wildbeast.svg" alt="caravan">
-        </li>
-        <li>
-          <img src="./src/img/parceiros/surfbot.svg" alt="caravan">
-        </li>
-      </ul>
+    <ul class="parceiros-marcas">
+      <li>
+        <img src="./src/img/parceiros/caravan.svg" alt="caravan" width="140" height="38">
+      </li>
+      <li>
+        <img src="./src/img/parceiros/ranek.svg" alt="ranek" width="149" height="36">
+      </li>
+      <li>
+        <img src="./src/img/parceiros/handel.svg" alt="handel" width="139" height="50">
+      </li>
+      <li>
+        <img src="./src/img/parceiros/dogs.svg" alt="dogs" width="152" height="39">
+      </li>
+      <li>
+        <img src="./src/img/parceiros/lescone.svg" alt="lescone" width="208" height="41">
+      </li>
+      <li>
+        <img src="./src/img/parceiros/flexblog.svg" alt="flexblog" width="165" height="38">
+      </li>
+      <li>
+        <img src="./src/img/parceiros/wildbeast.svg" alt="wildbeast" width="196" height="34">
+      </li>
+      <li>
+        <img src="./src/img/parceiros/surfbot.svg" alt="surfbot" width="200" height="49">
+      </li>
+    </ul>
   </section>
 
   <section class="depoimento">
     <div class="depoimento-foto">
-      <img src="./src/img/fotos/depoimento.jpg" alt="Pessoa pedalando uma bicicleta Bikcraft">
+      <img src="./src/img/fotos/depoimento.jpg" alt="Pessoa pedalando uma bicicleta Bikcraft" width="1560" height="1360">
     </div>
 
     <div class="depoimento-conteudo">
@@ -221,7 +225,7 @@
   <footer class="rodape-bg">
     <div class="rodape container">
       <a class="logo" href="#">
-        <img src="./src/img/bikcraft.svg" alt="logo">
+        <img src="./src/img/bikcraft.svg" alt="Bikcraft" width="136" height="32">
       </a>
 
       <div class="contato">
@@ -232,16 +236,16 @@
           <p>Rua Ali Perto, 42 - Botafogo</p>
           <p>Rio de Janeiro - RJ</p>
         </div>
-        
+
         <nav class="redes">
           <a href="#">
-            <img src="./src/img/redes/facebook.svg" alt="Facebook">
+            <img src="./src/img/redes/facebook.svg" alt="Facebook" width="32" height="32">
           </a>
           <a href="#">
-            <img src="./src/img/redes/instagram.svg" alt="Instagram">
+            <img src="./src/img/redes/instagram.svg" alt="Instagram" width="32" height="32">
           </a>
           <a href="#">
-            <img src="./src/img/redes/youtube.svg" alt="Youtube">
+            <img src="./src/img/redes/youtube.svg" alt="Youtube" width="32" height="32">
           </a>
         </nav>
       </div>
