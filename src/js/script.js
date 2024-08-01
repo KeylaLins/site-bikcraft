@@ -42,5 +42,3 @@ function ativarDesativarPergunta(pergunta) {
 }
 
 perguntas.forEach(ativarDesativarPergunta);
-
-console.log("executando");
