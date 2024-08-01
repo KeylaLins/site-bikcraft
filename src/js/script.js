@@ -1,4 +1,4 @@
-//Ativar links do menun
+//Ativar links de MENU
 const links = document.querySelectorAll(".header-menu a");
 
 function ativarLink(link){
@@ -12,8 +12,7 @@ function ativarLink(link){
 
 links.forEach(ativarLink);
 
-//ATIVAR ITEMS DO ORÇAMENTO
-
+//Ativar items de ORÇAMENTO
 const paramentro = new URLSearchParams(location.search);
 
 function ativarProduto(paramentro){
@@ -25,5 +24,23 @@ function ativarProduto(paramentro){
 }
 
 paramentro.forEach(ativarProduto);
+
+//Fazendo um acordeon em SEGUROS-PERGUNTAS FREQUENTES
+const perguntas = document.querySelectorAll(".item");
+
+function ativarDesativarPergunta(pergunta) {
+  pergunta.addEventListener("click", function () {
+    const perguntaAtiva = document.querySelector(".ativo");    
+    
+    if (perguntaAtiva) {
+      pergunta.classList.add("ativo");
+      perguntaAtiva.classList.remove("ativo");
+    }else{
+      pergunta.classList.add("ativo");
+    }
+  });
+}
+
+perguntas.forEach(ativarDesativarPergunta);
 
 console.log("executando");
