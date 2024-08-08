@@ -42,3 +42,22 @@ function ativarDesativarPergunta(pergunta) {
 }
 
 perguntas.forEach(ativarDesativarPergunta);
+
+ //Galeria de imagens em BIBCICLETAS-INTERNAS
+const galeria = document.querySelectorAll(".fotos img");
+const galeriaContainer = document.querySelector(".fotos");
+
+function trocarImagem(event){
+  const img = event.currentTarget;
+  const media = matchMedia("(min-width: 925px)").matches;
+
+  if(media){
+    galeriaContainer.prepend(img);
+  }
+}
+
+function eventosGaleria(img){
+  img.addEventListener("click", trocarImagem);
+}
+
+galeria.forEach(eventosGaleria);
