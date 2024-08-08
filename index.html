@@ -50,16 +50,16 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-informacao">
-        <h1 class="titulo">Bicicletas feitas sob medida<span class="ponto">.</span></h1>
+        <h1 class="titulo paraBaixo" data-anime="200">Bicicletas feitas sob medida<span class="ponto">.</span></h1>
 
-        <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <p class="paraBaixo" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
 
-        <a class="btn" href="./src/bicicletas.html">Selecione a sua</a>
+        <a class="btn paraBaixo" href="./src/bicicletas.html" data-anime="600">Selecione a sua</a>
       </div>
 
       <div class="introducao-imagem">
 
-        <picture>
+        <picture class="paraBaixo" data-anime="800">
           <source srcset="./src/img/bicicleta/nimbus.jpg" media="(max-width: 850px)">
           <img src="./src/img/bicicletas/nimbus-home.jpg" alt="bicicleta eletrica preta">
         </picture>
@@ -273,6 +273,8 @@
     </div>
     <p class="direitos container">Bikcraft © Alguns direitos reservados.</p>
   </footer>
+
+  <script src="./src/js/simple-anime.js"></script>
   <script src="./src/js/script.js"></script>
 </body>
 
