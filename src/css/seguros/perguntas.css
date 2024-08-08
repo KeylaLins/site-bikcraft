@@ -39,7 +39,7 @@
   transition: 0.3s;
 }
 
-.perguntas .item .resposta{
+.js .perguntas .item .resposta{
   padding-top: 12px;
   padding-left: 20px;
   font: var(--roboto-s);
@@ -51,7 +51,7 @@
 .perguntas .item.ativo .item h4::after{
   transform: rotate(180deg);
 }
-.perguntas .item.ativo .resposta{
+.js .perguntas .item.ativo .resposta{
   display: block;
 }
 
