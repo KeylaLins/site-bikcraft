@@ -36,7 +36,7 @@
 
 .perguntas h4::after {
   content: url("../../img/icones/seta-abrir.svg");
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .js .perguntas .item .resposta{
@@ -48,7 +48,7 @@
   display: none;
 }
 
-.perguntas .item.ativo .item h4::after{
+.perguntas .item.ativo h4::after{
   transform: rotate(180deg);
 }
 .js .perguntas .item.ativo .resposta{
@@ -56,6 +56,10 @@
 }
 
 @media (max-width: 800px) {
+  #bicicleta-interna .inicio{
+    padding: 20px 0;
+    padding-top: 40px;
+  }
   .perguntas {
     padding-top: 60px;
     padding-bottom: 60px;

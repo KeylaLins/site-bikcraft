@@ -79,5 +79,9 @@
   .rodape {
     gap: 32px;
     grid-template-columns: 1fr;
+    padding-bottom: 16px;
+  }
+  .direitos{
+    padding-bottom: 20px;
   }
 }

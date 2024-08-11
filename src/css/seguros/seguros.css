@@ -80,7 +80,7 @@
 @media (max-width: 850px) {
   .seguros {
     grid-template-columns: 1fr;
-    padding-top: 32px;
+    padding: 32px;
   }
   .seguros-plano h3,
   .seguros-plano .seguros-preco {
